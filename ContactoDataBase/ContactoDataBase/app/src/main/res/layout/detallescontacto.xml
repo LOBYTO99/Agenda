@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AF3E7"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewnamever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_detalle_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewphonver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_detalle_celular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textViewciudadver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_detalle_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewcorreover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo electronico"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_detalle_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="GuardarContactos"
+        android:text="Editar"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
