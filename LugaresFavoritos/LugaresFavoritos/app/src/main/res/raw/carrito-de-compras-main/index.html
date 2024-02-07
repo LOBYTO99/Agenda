@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo1.css">
+    <script src="app.js" async></script>
+    <title>TecInvocación </title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>TecInvocación</h1>
+            </div>
+            <div class="imagenlogo"><img src="imagen.jpg.png" alt="Imagen"></div>
+            <nav class="menu">
+                <a href="https://tecnologicoloja.edu.ec/"target="_blank">Inicio</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index6.html#abajo">Nosotros</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index7.html">Ternimos y condiciones</a>
+                <a href="#abajo">Contacto</a>
+            </nav>
+            <div class="modulo"></div>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!-- Menú desplegable -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index.html">Computadoras</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index1.html">Monitores</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index2.html">Mouses</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index3.html">Sillas</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index4.html">Impresoras</a>
+                <a href="http://127.0.0.1:5501/carrito-de-compras-main/index5.html">Accesorios</a>
+
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Box Engasse</span>
+                <img src="img/boxengasse.png" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">English Horse</span>
+                <img src="img/englishrose.png" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Knock Nap</span>
+                <img src="img/knocknap.png" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">La Night</span>
+                <img src="img/lanight.png" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Silver All</span>
+                <img src="img/silverall.png" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Skin Glam</span>
+                <img src="img/skinglam.png" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Midimix</span>
+                <img src="img/midimix.png" alt="" class="img-item">
+                <span class="precio-item">$54.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Sir Blue</span>
+                <img src="img/sirblue.png" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Middlesteel</span>
+                <img src="img/mouse9.png" alt="" class="img-item">
+                <span class="precio-item">$42.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="pie"> 
+        <h5 class="Face"><a href=" https://www.facebook.com/derek.loyola.188"target="_blank"> Facebook</a></h5><br>
+        <div class="facebook3"><img src="facebook.png" alt="Imagen"></div>
+        <h5 class="insta"><a href="https://www.instagram.com/_anthony_loyola/" target="_blank">Instagram</a> </h5>
+        <div class="instagram"><img src="instagram.png" alt="Imagen"></div>
+        <h5 class="Wha"><a href="https://api.whatsapp.com/send?phone=0981229102" target="_blank">WhatsApp</a> </h5>
+        <div class="Whassap"><img src="Whassap.png" alt="Imagen"></div>
+        <h5 class="Fono"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Correo</a> </h5>
+        <div class="Telefono"><img src="Telefono.png" alt="Imagen"></div>
+        <div id="abajo"> <p></p></div>
+    </footer>
+</body>
+</html>

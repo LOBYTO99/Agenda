@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/opAgregarSitio"
+        android:title="Agregar un sitio" />
+    <item
+        android:id="@+id/opRestaurants"
+        android:title="Restaurants" />
+    <item
+        android:id="@+id/ophoteles"
+        android:title="Hoteles" />
+    <item
+        android:id="@+id/opiglesias"
+        android:title="Iglesias" />
+    <item
+        android:id="@+id/opparques"
+        android:title="Parques" />
+    <item
+        android:id="@+id/opinstituciones"
+        android:title="Instituciones" />
+    <item
+        android:id="@+id/optodas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Todas" />
+</menu>

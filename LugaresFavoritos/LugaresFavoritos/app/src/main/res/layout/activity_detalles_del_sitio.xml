@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDD9D9"
+    tools:context=".Ventanas.DetallesDelSitio">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente"
+        android:text="Ubicacion"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/editTextDESCRIPCIONVER"
+        android:layout_width="157dp"
+        android:layout_height="153dp"
+
+        android:padding="10dp"
+        android:background="#DDD9D9"
+        android:text="Texto a mostrar sdgfdgfdgfdgfdgdfgfdgfdgfdgdfgfdgfdgfd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/textViewDescripcionVER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente"
+        android:text="Descripcion"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <ImageView
+        android:id="@+id/imageViewVER"
+        android:layout_width="208dp"
+        android:layout_height="188dp"
+        android:src="@drawable/addimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <EditText
+        android:id="@+id/editTextNombreVER"
+        android:layout_width="206dp"
+        android:layout_height="47dp"
+        android:width="350dp"
+        android:ems="10"
+        android:fontFamily="@font/fuente"
+        android:inputType="none"
+        android:text=""
+        android:focusable="false"
+
+
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+
+    <ImageView
+        android:id="@+id/imageViewUbiVer"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397"
+        app:srcCompat="@drawable/verubi" />
+
+    <EditText
+        android:id="@+id/editTextCategoriaVER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:ems="10"
+
+        android:textSize="15dp"
+        android:text=""
+        android:focusable="false"
+        android:inputType="none"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="385dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832"
+        map:cameraZoom="15"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keyboardNavigationCluster="false"
+        android:onClick="SalirDetalles"
+        android:text="SALIR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="EliminarSitio"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

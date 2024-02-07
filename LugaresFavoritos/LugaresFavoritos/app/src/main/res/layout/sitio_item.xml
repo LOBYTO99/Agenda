@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- contact_item.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/CV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/item_image_view_"
+            android:layout_width="102dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@drawable/addimg" /> <!-- Imagen por defecto para el contacto -->
+
+
+        <LinearLayout
+            android:layout_width="227dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_text_view_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:height="30dp"
+                android:fontFamily="@font/fuente"
+                android:text="Nombre"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/item_text_view_categoria"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:height="30dp"
+                android:text="Categoria"
+                android:textAlignment="gravity"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

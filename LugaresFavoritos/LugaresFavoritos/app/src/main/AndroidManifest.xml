@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LugaresFavoritos"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.lugaresfavoritos.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+
+            </meta-data>
+        </provider>
+
+        <activity
+            android:name=".Mapas.Mapa"
+            android:exported="false" />
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyC0Asq14dDakGChZ3PSmnCN0xne-uS5iWE" />
+
+        <activity
+            android:name=".Ventanas.DetallesDelSitio"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:label="Detalles del sitio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Ventanas.MainActivity"
+                />
+        </activity>
+
+
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Ventanas.AgregarSitio"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:label="Agregar Sitio">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Ventanas.MainActivity"
+                    />
+        </activity>
+        <activity
+            android:name=".Ventanas.MainActivity"
+            android:exported="false"
+            android:label="Bienvenido"
+            android:theme="@style/Theme.Material3.DayNight">
+
+        </activity>
+    </application>
+
+</manifest>
